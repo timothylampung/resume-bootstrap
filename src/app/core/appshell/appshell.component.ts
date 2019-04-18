@@ -9,7 +9,7 @@ import {Component} from '@angular/core';
 export class AppshellComponent {
 
   toggleSideBar = true;
-  sideBarCss = 'col-md-9 ml-sm-auto col-lg-10 px-4';
+  sideBarCss = 'col-md-12 ml-sm-auto col-lg-10 px-4';
 
   onToggle(event) {
     this.toggleSideBar = event;
