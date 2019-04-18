@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 
 @Component({
@@ -8,5 +8,6 @@ import {Component} from '@angular/core';
 })
 export class TopbarComponent {
   menuItems: string[] = ['Home', 'Resume', 'Portfolio', 'Blog', 'Contact Me'];
-
+  @Output() toggleSideBar = new EventEmitter<boolean>();
+  @Input() isToggle = false;
 }

@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BootstrapModule} from './bootstrap.module';
 import {CoreModule} from './core/core.module';
-import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
+import {ResumeModule} from './resume/resume.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +15,7 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BootstrapModule,
+    ResumeModule,
     CoreModule
   ],
   exports : [],

@@ -1,19 +1,21 @@
 import {NgModule} from '@angular/core';
-import {NgbAlertModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbAlertModule, NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 export const BOOTSTRAP_MODULES = [
   NgbModule,
-  NgbAlertModule
+  NgbAlertModule,
+  NgbCarouselModule
 ];
 
 @NgModule({
   entryComponents: [],
-  imports: [CommonModule, AppRoutingModule,
+  imports: [CommonModule, FontAwesomeModule, AppRoutingModule,
     FormsModule, BOOTSTRAP_MODULES],
-  exports: [CommonModule, AppRoutingModule,
+  exports: [CommonModule, FontAwesomeModule, AppRoutingModule,
     FormsModule, BOOTSTRAP_MODULES],
   declarations: [],
   providers: [],
