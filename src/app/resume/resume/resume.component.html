@@ -1,3 +1,4 @@
-
-<app-skillbar *ngFor="let skill of skillSets" [type]="skill.type" [title]="skill.title" [currentValue]="skill.currentValue">
-</app-skillbar>
+<div class="container">
+  <app-skillbar class="w-50" *ngFor="let skill of skillSets" [type]="skill.type" [title]="skill.title"
+                [currentValue]="skill.currentValue"></app-skillbar>
+</div>
