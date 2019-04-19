@@ -9,8 +9,8 @@ import {Router} from '@angular/router';
 export class SidenavComponent {
   menuItems: { css: string, name: string, url?: string }[] =
     [
-      {name: 'Home', css: 'fab fa-linkedin', url: '/resume/home'},
-      {name: 'Resume', css: 'fab fa-linkedin', url: '/resume/resume'},
+      {name: 'Home', css: 'fas fa-home', url: '/resume/home'},
+      {name: 'Resume', css: 'fas fa-file', url: '/resume/resume'},
       {name: 'Profile', css: 'fab fa-linkedin', url: '/resume/profile'},
       {name: 'Contact Us', css: 'fab fa-linkedin', url: '/resume/contact-us'}
     ];
@@ -18,7 +18,7 @@ export class SidenavComponent {
   constructor(private router: Router) {}
 
   navigate(nav: { css: string, name: string, url?: string }) {
-    console.log(nav)
+    console.log(nav);
     this.router.navigate([nav.url]);
   }
 

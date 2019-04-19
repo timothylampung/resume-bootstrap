@@ -2,10 +2,10 @@
   <div class="sidebar-sticky">
     <ul class="nav flex-column">
       <li *ngFor="let menu of menuItems" class="nav-item">
-        <span (click)="navigate(menu)" class="nav-link active">
+        <button style="width: 100%; text-align: left" (click)="navigate(menu)" class="btn btn-block">
           <i class="{{menu.css}}"></i>
           {{menu.name}}
-        </span>
+        </button>
       </li>
     </ul>
   </div>
