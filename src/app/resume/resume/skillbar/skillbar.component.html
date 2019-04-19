@@ -1,2 +1,7 @@
 <p class="lead">{{title}} - {{currentValue}}%</p>
-<p><ngb-progressbar [type]="type" [value]="currentValue"></ngb-progressbar></p>
+<p><ngb-progressbar
+  (click)="emitter.emit('Clicked!!!')"
+  [type]="type"
+  [value]="currentValue">
+</ngb-progressbar>
+</p>

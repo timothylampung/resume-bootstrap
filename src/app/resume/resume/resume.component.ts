@@ -27,4 +27,7 @@ export class ResumeComponent {
 
   faCoffee = faCoffee;
 
+  onChildClick($event: string) {
+    console.log($event)
+  }
 }

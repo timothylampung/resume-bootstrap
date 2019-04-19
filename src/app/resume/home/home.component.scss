@@ -1,11 +1,9 @@
 .cover {
   color: aliceblue;
-  background-image: url("/assets/images/foggy_forest_01_by_sacral_stock-d74yjpg.jpg");
+  background: url("/assets/images/foggy_forest_01_by_sacral_stock-d74yjpg.jpg") no-repeat 0px center fixed;
   object-fit: cover;
   background-size: 100%;
-  background-repeat: no-repeat;
   background-blend-mode: multiply;
-  background-position: 0px -300px;
 }
 
 .cover-text{
