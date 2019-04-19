@@ -1,4 +1,21 @@
-<div class="container">
-  <app-skillbar class="w-50" *ngFor="let skill of skillSets" [type]="skill.type" [title]="skill.title"
-                [currentValue]="skill.currentValue"></app-skillbar>
+<div class="container-fluid">
+
+  <div class="background-image"></div>
+  <div class="content">
+    <p></p>
+  </div>
+
+  <section class="skills">
+    <h4>Skill Sets</h4>
+    <app-skillbar class="w-50" *ngFor="let skill of skillSets" [type]="skill.type" [title]="skill.title"
+                  [currentValue]="skill.currentValue"></app-skillbar>
+  </section>
+  <br>
+
+  <section class="working">
+    <app-timeline title="Working Exeprience" [timeSets]="timeSets"></app-timeline>
+  </section>
+
 </div>
+
+

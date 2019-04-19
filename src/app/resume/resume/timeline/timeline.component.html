@@ -1,0 +1,35 @@
+
+
+<h4>{{title}}</h4>
+<div class="timeline">
+  <!--per item-->
+  <div *ngFor="let time of timeSets">
+
+    <div *ngIf="time.position == 'left'" class="timeline-container timeline-left">
+      <div class="content">
+        <!--YEAR-->
+        <h2>{{time.year}}</h2>
+        <!--Content-->
+        <p>{{time.content}}</p>
+      </div>
+    </div>
+
+    <div *ngIf="time.position == 'right'" class="timeline-container timeline-right">
+      <div class="content">
+        <!--YEAR-->
+        <h2>{{time.year}}</h2>
+        <!--Content-->
+        <p>{{time.content}}</p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!--[ngClass]="{-->
+<!--'timeline-container timeline-left' : time.position == 'left',-->
+<!--'timeline-container timeline-right' : time.position == 'right'-->
+<!--}"-->
